@@ -8,6 +8,10 @@ pluginManagement {
             name = 'Cotton'
             url = 'https://server.bbkmc.net/artifactory/release'
         }
+        maven {
+            name = 'Gradle Plugins'
+            url = 'https://plugins.gradle.org/m2/'
+        }
         gradlePluginPortal()
     }
 }
