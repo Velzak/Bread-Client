@@ -4,14 +4,6 @@ pluginManagement {
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
         }
-        maven {
-            name = 'Fabric Snapshots'
-            url = 'https://maven.fabricmc.net/repository/snapshot/'
-        }
-        maven {
-            name = 'Yarn'
-            url = 'https://maven.fabricmc.net/repository/fabric-maven'
-        }
         mavenCentral()
         gradlePluginPortal()
     }
