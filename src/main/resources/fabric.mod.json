@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "breadclient",
+  "version": "${version}",
+  "name": "Bread Client",
+  "description": "A cool Minecraft mod with custom HUD and fly feature",
+  "authors": [
+    "Velzak"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/breadclient/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.velzak.breadclient.BreadClient"
+    ],
+    "client": [
+      "com.velzak.breadclient.BreadClientClient"
+    ],
+    "modmenu": [
+      "com.velzak.breadclient.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "breadclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config": ">=15.0.127",
+    "modmenu": ">=11.0.1"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
