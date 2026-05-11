@@ -14,4 +14,11 @@ pluginManagement {
         }
         gradlePluginPortal()
     }
+    resolutionStrategy {
+        eachPlugin {
+            if (it.requested.id.id == 'fabric-loom') {
+                it.useModule('net.fabricmc:fabric-gradle-plugin:0.14.0')
+            }
+        }
+    }
 }

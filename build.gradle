@@ -1,14 +1,16 @@
-buildscript {
-    repositories {
-        maven { url "https://maven.fabricmc.net/" }
-        maven { url "https://server.bbkmc.net/artifactory/release" }
-        gradlePluginPortal()
-    }
+plugins {
+    id "fabric-loom"
+    id "maven-publish"
 }
 
-plugins {
-    id "fabric-loom" version "1.3.9"
-    id "maven-publish"
+repositories {
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://maven.terraformersmc.com/" }
+}
+
+loom {
+    // Loom configuration
 }
 
 version = project.mod_version
