@@ -1,3 +1,8 @@
+plugins {
+    id 'fabric-loom' version '1.4.11'
+    id 'maven-publish'
+}
+
 version = project.mod_version
 group = project.maven_group
 base {

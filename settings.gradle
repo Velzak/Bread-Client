@@ -5,13 +5,9 @@ pluginManagement {
             url = 'https://maven.fabricmc.net/'
         }
         maven {
-            name = 'NeoForged'
-            url = 'https://maven.neoforged.net/releases'
+            name = 'Cotton'
+            url = 'https://server.bbkmc.net/artifactory/release'
         }
         gradlePluginPortal()
     }
-}
-
-plugins {
-    id 'fabric-loom' version '1.6'
 }
